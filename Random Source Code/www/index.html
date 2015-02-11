@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+	<meta name="viewport"
+		content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	
+	<!--CSS -->
+	<link rel="stylesheet" type="text/css" href="lib/basics.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery.mobile-1.4.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="lib/jquery.countdown.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	
+	<!--JS y LIB -->
+	<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.mobile-1.4.0.min.js"></script>
+	<script type="text/javascript" src="lib/jQueryRotate.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	
+</head>
+<body>
+	<!-- HOME ESPANOL -->
+	<div data-role="page" id="homeEsp" data-theme="a">
+		<div data-role="header">
+			<h1>Aleatorio</h1>
+		</div>
+		<div data-role="content">
+			<h1>Bienvenido a</h1>
+			<h1>¡Aleatorio!</h1>
+			
+			<!-- <a onclick="onGotoStart()" data-role="button">Start Activity</a> -->
+			<a href="#startNumEsp" onclick="randomNumber1()" data-role="button">Numero</a> 
+			<a href="#startDirEsp" onclick="randomDirect1()" data-role="button">Dirección</a> 
+			<a href="#startEsp" onclick="randomColor()" data-role="button">Color</a> 
+			<a href="#homeIng" 	onclick="idioma='en';" data-role="button">English <img src="img/eng.png" class="buttonIcon" ></a> 
+			<a href="#moreEsp" data-role="button">Mas</a>
+		</div>
+		<div data-role="footer">
+            <h1>Taos App & Games</h1>
+		</div>
+	</div>
+	<!-- HOME INGLES -->
+	<div data-role="page" id="homeIng" data-theme="a">
+		<div data-role="header">
+			<h1>Random</h1>
+		</div>
+		<div data-role="content">
+			<h1>Wellcome to</h1>
+			<h1>Random!</h1>
+			<!-- <a onclick="onGotoStart()" data-role="button">Start Activity</a> -->
+			<a href="#startNumEng" onclick="randomNumber2()" data-role="button">Number</a> 
+			<a href="#startDirEng" onclick="randomDirect2()" data-role="button">Direction</a> 
+			<a href="#startEng" onclick="randomColor2()" data-role="button">Colour</a> 
+			<a href="#homeEsp" onclick="idioma='es';" data-role="button">Español <img src="img/esp.png"  class="buttonIcon"></a> 
+			<a href="#moreIng" data-role="button">More</a>
+		</div>
+		<div data-role="footer">
+			  <h1>Taos App & Games</h1>
+		</div>
+	</div>
+
+	<!-- MORE ESPANOL-->
+	<div data-role="page" id="moreEsp" data-theme="a">
+		<div data-role="header">
+			<h1>Sobre mi</h1>
+		</div>
+		<div data-role="content">
+			<p>Bienvenido a una de mis primeras aplicaciones. </p>
+			<p>Si tienes algun comentario no dudes en hacerlo enviandome un email a "Taosworldgames@gmail.com".</p>
+			<p></p>
+			
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="BM63H5FDBH6EW">
+                        <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+            </form>
+			
+			
+			<a href="#homeEsp" data-role="button">Volver a inicio</a>
+		</div>
+		<div data-role="footer">
+			<h1>Taos App & Games</h1>
+		</div>
+	</div>
+    
+	<!-- MORE INGlES-->
+	<div data-role="page" id="moreIng" data-theme="a">
+		<div data-role="header">
+        <h1>About me</h1>
+		</div>
+		<div data-role="content">
+        <p>Welcome to one of my first applications.</p>
+        <p>If you have any comments do not feel free in sending me an email to "Taosworldgames@gmail.com".</p>
+        <p></p>
+        
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="BM63H5FDBH6EW">
+        <input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+        <img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        
+        <a href="#homeIng" data-role="button">Return</a>
+		</div>
+		<div data-role="footer">
+            <h1>Taos App & Games</h1>
+		</div>
+	</div>
+	
+	
+	
+	
+	<!-- NUMERO ESPANOL-->
+	<div data-role="page" id="startNumEsp" data-theme="a">
+		<div data-role="header">
+			<h1>Numero</h1>
+		</div>
+		<div data-role="content">
+			
+			<div id="resultNumber1"></div>
+			
+			<a onclick="randomNumber1()" data-role="button">Repetir</a>
+			
+			<div id='maxmin' class="ui-grid-b">
+				<div class="ui-block-a">
+					<input onchange="changeMin()" type="text" id="min" value="1"  />
+				</div>
+				<div class="ui-block-b">
+					<a data-role="button">---</a>
+				</div>
+				<div class="ui-block-c">
+					<input onchange="changeMax()" type="text"  id="max" value="100"  />
+				</div>
+			</div>
+			
+			<a href="#homeEsp" data-role="button">Volver</a>
+		</div>
+		<div data-role="footer">
+		  <h1>Taos App & Games</h1>
+		</div>
+	</div>
+	<!-- NUMERO INGlES-->
+	<div data-role="page" id="startNumEng" data-theme="a">
+		<div data-role="header">
+			<h1>Number</h1>
+		</div>
+		<div data-role="content">
+			
+			
+			<div id="resultNumber2"></div>
+			
+			<a onclick="randomNumber2()" data-role="button">Again</a>
+			
+			<div id='maxmin' class="ui-grid-b">
+				<div class="ui-block-a">
+					<input onchange="changeMin2()" type="text"  id="min2" value="1"  />
+				</div>
+				<div class="ui-block-b">
+					<a data-role="button">---</a>
+				</div>
+				<div class="ui-block-c">
+					<input onchange="changeMax2()" type="text" id="max2" value="100"  />
+				</div>
+			</div>
+			
+			<a href="#homeIng" data-role="button">Return</a>
+		</div>
+		<div data-role="footer">
+			  <h1>Taos App & Games</h1>
+		</div>
+	</div>
+
+
+	<!-- DIRECCION ESPANOL-->
+	<div data-role="page" id="startDirEsp" data-theme="a">
+		<div data-role="header">
+			<h1>Dirección</h1>
+		</div>
+		<div data-role="content">
+			
+			<div id="resultDirect1"><img id="resultArrow1" src="img/arrow.png" ></img></div>
+			
+			<a onclick="randomDirect1()" data-role="button">Repetir</a>
+			<a href="#homeEsp" data-role="button">Volver</a>
+		</div>
+		<div data-role="footer">
+			  <h1>Taos App & Games</h1>
+		</div>
+	</div>
+	<!-- DIRECCION INGlES-->
+	<div data-role="page" id="startDirEng" data-theme="a">
+		<div data-role="header">
+			<h1>Direction</h1>
+		</div>
+		<div data-role="content">
+			
+			<div id="resultDirect2"><img id="resultArrow2" src="img/arrow.png"></img></div>
+			
+			<a onclick="randomDirect2()" data-role="button">Again</a>
+			<a href="#homeIng" data-role="button">Return</a>
+		</div>
+		<div data-role="footer">
+		  <h1>Taos App & Games</h1>
+		</div>
+	</div>
+	
+	
+	<!-- COLOR ESPANOL-->
+	<div data-role="page" id="startEsp" data-theme="a">
+		<div data-role="header">
+			<h1>Color</h1>
+		</div>
+		<div data-role="content">
+			
+			<div id="resultColor"></div>
+			
+			<a onclick="randomColor()" data-role="button">Repetir</a>
+			<a href="#homeEsp" data-role="button">Regresar</a>
+		</div>
+		<div data-role="footer">
+			  <h1>Taos App & Games</h1>
+		</div>
+	</div>
+	<!-- COLOR INGlES-->
+	<div data-role="page" id="startEng" data-theme="a">
+		<div data-role="header">
+			<h1>Colour</h1>
+		</div>
+		<div data-role="content">
+			
+			
+			<div id="resultColor2"></div>
+			
+			<a onclick="randomColor2()" data-role="button">Again</a>
+			<a href="#homeIng" data-role="button">Return</a>
+		</div>
+		<div data-role="footer">
+			  <h1>Taos App & Games</h1>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

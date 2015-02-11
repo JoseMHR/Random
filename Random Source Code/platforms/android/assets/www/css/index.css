@@ -1,0 +1,49 @@
+.buttonIcon{
+	width: 26px;
+	height: 26px;
+	padding-left: 10px;
+}
+
+.buttonImg{
+	position:absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+#resultNumber1{
+    display:block;
+    text-align: center;
+   	font-size: 12em;
+   	font-family: sans-serif;
+}
+
+#resultNumber2{
+    display:block;
+    text-align: center;
+   	font-size: 12em;
+   	font-family: sans-serif;
+}
+
+#resultDirect1{
+    display:block;
+    text-align: center;
+   	font-size: 12em;
+   	font-family: sans-serif;
+}
+
+#resultDirect2{
+    display:block;
+    text-align: center;
+   	font-size: 12em;
+   	font-family: sans-serif;
+}
+
+.ui-btn {
+	font-size: x-large !important;
+}
+
+h1 {
+	font-size: x-large !important;
+}
